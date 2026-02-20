@@ -1,4 +1,4 @@
-tourist_api/
+tourist-spot-api/
 │
 ├── public/
 │   ├── index.php   # Entry point
