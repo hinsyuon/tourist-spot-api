@@ -5,9 +5,9 @@ USE tourist_app;
 CREATE TABLE IF NOT EXISTS users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(100) UNIQUE NOT NULL,
-    password VARCHAR(255) NOT NULL,
+    password VARCHAR(250) NOT NULL,
     role ENUM('admin','editor','user') DEFAULT 'user',
-    token VARCHAR(255) DEFAULT NULL,
+    token VARCHAR(250) DEFAULT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -18,10 +18,10 @@ VALUES ('admin','$2y$10$pgwC3EUh3sayoS9GRiDb7u817L26Psb7E6/KZ7GD/V56O2gkbyPEi','
 -- Tourist spots table
 CREATE TABLE IF NOT EXISTS tourist_spots (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(255) NOT NULL,
+    name VARCHAR(250) NOT NULL,
     description TEXT,
-    location VARCHAR(255),
-    image VARCHAR(255),
+    location VARCHAR(250),
+    image VARCHAR(250),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
