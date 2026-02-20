@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS tourist_app;
-USE tourist_app;
+CREATE DATABASE IF NOT EXISTS tourist_spot_db;
+USE tourist_spot_db;
 
 -- Users table
 CREATE TABLE IF NOT EXISTS users (
